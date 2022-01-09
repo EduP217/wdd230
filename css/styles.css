@@ -110,7 +110,7 @@ header>div {
   padding: 10px;
 }
 
-header li, header h1 {
+header li, header h1, header li a {
   color: var(--paragraph-color-on-color);
 }
 
