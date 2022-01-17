@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Nunito+Sans&display=swap');
+
+:root {
+  --primary-color: #555B6E;
+  --secondary-color: #89B0AE;
+  --accent-color: #FFD6BA;
+  --border-color: #BEE3DB;
+
+  --heading-font: Nunito Sans, Bebas Neue;
+  --paragraph-font: Inter, roboto, sans-serif;
+  --paragraph-color: #000;
+  --nav-font: Yaldevi, roboto, sans-serif;
+
+  --headline-color-on-white: black;  /* headlines on a white background */ 
+  --headline-color-on-color: #fff; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #fff; /* paragraph text on a colored background */ 
+  --text-background-color: #B0D0D3;
+  
+  --nav-link-color: #FFFFFF;
+  --nav-link-color-on-white: #000;
+  --nav-background-color: #C08497;
+  --nav-hover-link-color: #fff;
+  --nav-hover-background-color: #B0D0D3;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  font-weight: normal;
+}
+
+#content {    
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+ul > li {
+  font-family: var(--paragraph-font);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  word-spacing: 2.5px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent {
+  background-color: var(--accent-color);
+}
+
+p.colored {
+  background-color: var(--text-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1, header h2, header h3, header h4, header h5,
+footer h1, footer h2, footer h3, footer h4, footer h5 {
+  color: var(--paragraph-color-on-color);
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.divisor {
+  border: 1px solid #eaeaea;
+  height: auto;
+  width: initial;
+  margin: 15px 0;
+}
+
+footer .lastupdate {
+  color: var(--accent-color);
+}
+
+main {
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  border-radius: 9px 9px 0 0;
+  padding: 0.5rem;
+}
+
+.card-header h3 {
+  color: var(--paragraph-color-on-color);
+  margin: 0;
+  padding: 0;
+}
+
+.card-body {
+  display: grid;
+  padding: 0.5rem;
+  grid-template-rows: auto auto auto auto;
+  border: 1px solid #cecece;
+}
+
+.card-body h3.title {
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.card-body img.image {
+  border: 1px solid #cecece;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.card-body a.hiperlink {
+  text-decoration: underline;
+}
+
+@media(min-width: 1240px){
+  main {
+    padding: 1rem 15%;
+  }
+}
+@media(max-width: 768px){
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-container .grid-item:nth-child(3) {
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 550px) {}
+@media(max-width: 425px){
+  .grid-container {
+    display: block;
+  }
+
+  .grid-item {
+    padding: 0.5rem 0;
+  }
+}
+@media(max-width: 325px){}
