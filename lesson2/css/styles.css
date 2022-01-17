@@ -142,7 +142,8 @@ main {
 .card-body img.image {
   border: 1px solid #cecece;
   margin-top: 0.5rem;
-  width: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .card-body a.hiperlink {
