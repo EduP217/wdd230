@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="css/large.css" />
 </head>
 <body>
+    <div id="messageBanner">
+        <h3 class="margin-less">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </h3>
+    </div>
     <header>
-        <div class="header-grid-container">
-            <img id="headerLogo" src="images/logo_mini.PNG" alt="site logo" width="100%" height="auto">
+        <div class="container header-grid-container">
+            <img id="headerLogo" src="images/logo_mini.PNG" alt="site logo">
             <p class="colored siteName">
                 <span class="title">Leoncio Prado</span><br>
                 Chamber of Commerce
@@ -30,45 +35,104 @@
                 </ul>
             </nav>
             <div class="socialButtons">
-                <img src="images/facebook.png" alt="fb icon" width="30px" height="auto" class="fb icon">
-                <img src="images/linkedin.png" alt="linkedin icon" width="30px" height="auto" class="linkedin icon">
+                <img src="images/facebook.png" alt="fb icon" class="fb icon">
+                <img src="images/linkedin.png" alt="linkedin icon" class="linkedin icon">
             </div>
-            <p id="titleCurrentDate" class="colored"></p>
         </div>
+        <p id="titleCurrentDate" class="colored"></p>
     </header>
     <main>
-        <div class="grid-container content">
+        <div class="container grid-container">
             <div class="grid-item item-hero">
-                <p>Hero with site name and call to action</p>
+                <img src="images/leoncio_prado.jpeg" alt="leoncio prado" class="hero-image">
+                <h1>Welcome to Leoncio Prado</h1>
+                <button type="button" class="button btn-join">Join the Chamber</button>
             </div>
             <div class="grid-item item-event">
-                <p>Event</p>
+                <p class="section-paragraph">
+                    <span class="section-title">Ribbon Cutting</span> <br>
+                    <label class="section-label">💎 The Diamond Shack</label> <br>
+                    Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.
+                    <span class="more-info">more info...</span>
+                </p>
             </div>
             <div class="grid-item item-weather">
-                <p>Weather</p>
+                <p class="section-paragraph">
+                    <span class="section-title">Weather</span>
+                </p>
+                <div class="weather-graphic">
+                    <img src="images/sun_cloud_weather.png" alt="weather" class="weather-icon" >
+                    <h1>33ºC</h1>
+                </div>
+                <h2>Partly Cloudly</h2>
+                <div class="divisor margin-less"></div>
+                <table class="weather-info">
+                    <tr>
+                        <td class="text-right">Wind Speed:</td>
+                        <td class="text-center">2.5 km/h</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">Wind Chill:</td>
+                        <td class="text-center">N/A</td>
+                    </tr>
+                </table>
             </div>
             <div class="grid-item item-release">
-                <p>News Release</p>
+                <p class="section-paragraph">
+                    <span class="section-title">News Release</span> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati similique libero recusandae eaque voluptatibus pariatur exercitationem, voluptatem quod corrupti non debitis nesciunt quisquam earum in optio, omnis quia cumque!
+                    Voluptatibus dicta, repudiandae a, accusantium quod quisquam non iusto magni sint ex alias pariatur earum labore illum, voluptas architecto quaerat et modi.
+                </p>
             </div>
             <div class="grid-item item-spotlight">
                 <div class="spotlight spotlight1">
-                    <p>Spotlight 1</p>
+                    <p class="section-paragraph">
+                        <span class="section-title">Thankful Transport</span> <br>
+                        <img src="images/truck.png" alt="thankful transport" class="spotlight-icon">
+                    </p>
+                    <h3>"We get it there for you!"</h3>
+                    <div class="divisor margin-less"></div>
+                    <p class="section-paragraph">
+                        hello@thankfultransport.com <br>
+                        +999-999-999 | Website
+                    </p>
                 </div>
                 <div class="spotlight spotlight2">
-                    <p>Spotlight 2</p>
+                    <p class="section-paragraph">
+                        <span class="section-title">Code Primera</span> <br>
+                        <img src="images/pencils.png" alt="code primera" class="spotlight-icon">
+                    </p>
+                    <h3>An after school coding instructional program</h3>
+                    <div class="divisor margin-less"></div>
+                    <p class="section-paragraph">
+                        contact@codeprimera.com <br>
+                        +999-999-999 | Website
+                    </p>
                 </div>
                 <div class="spotlight spotlight3">
-                    <p>Spotlight 3</p>
+                    <p class="section-paragraph">
+                        <span class="section-title">Build A Treefort</span> <br>
+                        <img src="images/treehouse.png" alt="build a treefort" class="spotlight-icon">
+                    </p>
+                    <h3>Over 1000 plans!</h3>
+                    <div class="divisor margin-less"></div>
+                    <p class="section-paragraph">
+                        builda@treefort.com <br>
+                        +999-999-999 | Website
+                    </p>
                 </div>
             </div>
             <div class="grid-item item-join">
-                <p>Join</p>
+                <button type="button" class="button btn-join">Join Us!</button>
+                <p class="section-paragraph">
+                    Discover how to join the chamber of commerce and how it will benefit your organization!
+                </p>
             </div>
         </div>
     </main>
     <footer>
-        <div class="footer-grid-container">
-            <img id="footerLogo" src="images/logo.PNG" alt="site logo" width="100%" height="auto">
+        <div class="container footer-grid-container">
+            <img id="footerLogo" src="images/logo.PNG" alt="site logo" >
             <p id="companyInfo" class="colored footerInfo">
                 <span class="title">Leoncio Prado Chamber of Commerce</span> <br>
                 Avenida Alcazar 351 Rimac <br>
@@ -78,7 +142,7 @@
                 <span class="info">info@lpcc.org.pe</span><br>
                 <span class="info">(+51) 953072361</span><br>
                 <span class="location">
-                    <img src="images/pin.png" alt="pin icon" width="30px" height="auto">
+                    <img src="images/pin.png" alt="pin icon" >
                     Location Map
                 </span>
             </p>

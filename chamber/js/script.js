@@ -10,6 +10,17 @@ document.getElementById('titleCurrentDate').innerHTML = today;
 //document.getElementById('footerCurrentYear').innerHTML = currentYear;
 //document.getElementById('footerLastModified').innerHTML = `Last Modification: ${lastupdateDateTime}`;
 
+switch (currentDate.getDay()) {
+    case 1:
+        document.querySelector('#messageBanner').classList.toggle('active');
+        break;
+    case 2:
+        document.querySelector('#messageBanner').classList.toggle('active');
+        break;
+    default:
+        break;
+}
+
 const recaulculateResponsive = () => {
 
     let isMobile = false;
@@ -62,6 +73,8 @@ window.onresize = () => {
 const toggleMenu = () => {
     document.querySelector('#menu-ham').classList.toggle('active');
     document.querySelector('#siteMenu').classList.toggle('open');
+    document.querySelector('.header-grid-container').classList.toggle('row-gap-1');
 }
 
 document.querySelector('#menu-ham').addEventListener('click', toggleMenu);
+

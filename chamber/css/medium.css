@@ -4,16 +4,12 @@
         padding: 0 12.5%;
     }
 
-    .header-grid-container {
-        grid-template-columns: 3rem auto auto 3rem;
-    }
-
     .grid-container {
         display: grid;
-        grid-template-columns: auto 0.5fr;
+        grid-template-columns: auto 12rem;
         grid-template-rows: auto auto auto auto auto;
         margin-bottom: 1rem;
-        grid-column-gap: 0.5rem;
+        grid-column-gap: 1rem;
         grid-row-gap: 1rem;
     }
 
@@ -24,6 +20,7 @@
     .item-hero {
         grid-column: 1/-1;
         grid-row: 1;
+        height: auto;
     }
 
     .item-release {
@@ -64,6 +61,7 @@
     .item-weather {
         grid-column: 2;
         grid-row: 5;
+        width: unset;
     }
 
     .footer-grid-container {
@@ -85,5 +83,27 @@
     
     footer span.info {
         line-height: 1;
+    }
+    
+    p label.section-label {
+        line-height: 5;
+        font-size: inherit;
+    }
+
+    .item-join p.section-paragraph {
+        padding: 1rem 0;
+    }
+
+    .item-hero img.hero-image {
+        height: 18rem;
+    }
+
+    .item-hero h1 {
+        left: 2rem;
+        top: 2rem;
+    }
+
+    .spotlight-icon {
+        width: 80px;
     }
 }
