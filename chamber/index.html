@@ -18,7 +18,10 @@
     </div>
     <header>
         <div class="container header-grid-container">
-            <img id="headerLogo" src="images/logo_mini.PNG" alt="site logo">
+            <picture>
+                <source srcset="images/logo_mini.webp" type="image/webp" >
+                <img id="headerLogo" src="images/logo_mini.PNG" alt="site logo">
+            </picture>
             <p class="colored siteName">
                 <span class="title">Leoncio Prado</span><br>
                 Chamber of Commerce
@@ -44,14 +47,20 @@
     <main>
         <div class="container grid-container">
             <div class="grid-item item-hero">
-                <img src="images/leoncio_prado.jpeg" alt="leoncio prado" class="hero-image">
+                <picture class="hero-image">
+                    <source media="(max-width: 425px)" srcset="images/wdd230x425.png" >
+                    <source media="(max-width: 768px)" srcset="images/wdd230x768.png" >
+                    <img src="images/wdd230x1200.png" alt="leoncio prado" >
+                </picture>
                 <h1>Welcome to Leoncio Prado</h1>
                 <button type="button" class="button btn-join">Join the Chamber</button>
             </div>
             <div class="grid-item item-event">
                 <p class="section-paragraph">
-                    <span class="section-title">Ribbon Cutting</span> <br>
-                    <label class="section-label">💎 The Diamond Shack</label> <br>
+                    <span class="section-title">Ribbon Cutting</span>
+                </p>
+                <p class="section-paragraph section-label">💎 The Diamond Shack</p>
+                <p class="section-paragraph">
                     Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.
                     <span class="more-info">more info...</span>
                 </p>
@@ -73,7 +82,7 @@
                     </tr>
                     <tr>
                         <td class="text-right">Wind Chill:</td>
-                        <td class="text-center">N/A</td>
+                        <td class="text-center"><span id="windchillInfo"></span></td>
                     </tr>
                 </table>
             </div>
@@ -132,7 +141,10 @@
     </main>
     <footer>
         <div class="container footer-grid-container">
-            <img id="footerLogo" src="images/logo.PNG" alt="site logo" >
+            <picture>
+                <source srcset="images/logo.webp" type="image/webp" >
+                <img id="footerLogo" src="images/logo.PNG" alt="site logo" >
+            </picture>
             <p id="companyInfo" class="colored footerInfo">
                 <span class="title">Leoncio Prado Chamber of Commerce</span> <br>
                 Avenida Alcazar 351 Rimac <br>
@@ -151,6 +163,7 @@
         <p id="userInfo" class="colored"></p>
     </footer>
 
+    <script src="js/windchill.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

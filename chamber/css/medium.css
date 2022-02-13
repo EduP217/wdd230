@@ -11,6 +11,7 @@
         margin-bottom: 1rem;
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
+        word-break: break-all;
     }
 
     .grid-item {
@@ -70,6 +71,7 @@
         grid-template-rows: auto auto;
         align-items: center;
         padding: 1rem 0;
+        word-break: break-all;
     }
 
     img#footerLogo {
@@ -86,7 +88,6 @@
     }
     
     p label.section-label {
-        line-height: 5;
         font-size: inherit;
     }
 
@@ -94,7 +95,7 @@
         padding: 1rem 0;
     }
 
-    .item-hero img.hero-image {
+    .item-hero .hero-image img {
         height: 18rem;
     }
 
@@ -105,5 +106,9 @@
 
     .spotlight-icon {
         width: 80px;
+    }
+
+    .item-event p.section-paragraph {
+        padding: 0 0.5rem;
     }
 }

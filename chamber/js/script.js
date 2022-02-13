@@ -78,3 +78,7 @@ const toggleMenu = () => {
 
 document.querySelector('#menu-ham').addEventListener('click', toggleMenu);
 
+let windchill = calculateWindchill(33, 2.5);
+console.log(windchill);
+
+document.querySelector("#windchillInfo").innerHTML = windchill;
