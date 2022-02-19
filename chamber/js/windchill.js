@@ -18,3 +18,8 @@ const calculateWindchill = (temperatureInCelsius, distanceInKmPH) => {
 
     return chill;
 }
+
+let windchill = calculateWindchill(33, 2.5);
+console.log(windchill);
+
+document.querySelector("#windchillInfo").innerHTML = windchill;

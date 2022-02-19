@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leoncio Prado Commerce Chamber</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+<body>
+    <div id="messageBanner">
+        <h3 class="margin-less">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </h3>
+    </div>
+    <header>
+        <div class="container header-grid-container">
+            <picture>
+                <source srcset="images/logo_mini.webp" type="image/webp" >
+                <img id="headerLogo" src="images/logo_mini.PNG" alt="site logo">
+            </picture>
+            <p class="colored siteName">
+                <span class="title">Leoncio Prado</span><br>
+                Chamber of Commerce
+            </p>
+            <div id="menu-ham">
+                <div class="hamburger hamburger-one"></div>
+            </div>
+            <nav id="navigation">
+                <ul id="siteMenu">
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="socialButtons">
+                <img src="images/facebook.png" alt="fb icon" class="fb icon">
+                <img src="images/linkedin.png" alt="linkedin icon" class="linkedin icon">
+            </div>
+        </div>
+        <p id="titleCurrentDate" class="colored"></p>
+    </header>
+    <main>
+        <div id="diff-days"></div>
+        <div id="images-container" class="container images-grid-container"></div>
+    </main>
+    <footer>
+        <div class="container footer-grid-container">
+            <picture>
+                <source srcset="images/logo.webp" type="image/webp" >
+                <img id="footerLogo" src="images/logo.PNG" alt="site logo" >
+            </picture>
+            <p id="companyInfo" class="colored footerInfo">
+                <span class="title">Leoncio Prado Chamber of Commerce</span> <br>
+                Avenida Alcazar 351 Rimac <br>
+                Cercado de Lima, 15094<br>
+            </p>
+            <p id="companyLocation" class="colored footerInfo">
+                <span class="info">info@lpcc.org.pe</span><br>
+                <span class="info">(+51) 953072361</span><br>
+                <span class="location">
+                    <img src="images/pin.png" alt="pin icon" >
+                    Location Map
+                </span>
+            </p>
+        </div>
+        <div class="divisor"></div>
+        <p id="userInfo" class="colored"></p>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/discover.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+</html>

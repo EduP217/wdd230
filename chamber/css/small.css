@@ -236,6 +236,7 @@ footer img#footerLogo {
 }
 
 main {
+    position: relative;
     padding: 1rem 0.5rem 0;
 }  
 
@@ -475,4 +476,41 @@ p span.more-info {
 
 #messageBanner.active {
     display: block;
+}
+
+.images-grid-container {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+picture.images-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discover {
+    margin: 1rem 0;
+}
+
+.images-grid-item img[data-src] {
+    filter: blur(0.2em);
+}
+
+.images-grid-item img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+#diff-days {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem;
+    background: var(--accent-color);
+    border: 5px solid var(--border-color);
+    border-radius: 9px;
+    z-index: 2;
+    font-size: 1.15rem;
+    box-shadow: 0 0 10px black;
 }
