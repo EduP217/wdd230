@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --primary-color: #7eb8c2;
+    --secondary-color: #5f8aa4;
+    --accent-color: #e7f0ed;
+    --accent2-color: #e7ffed;
+    --border-color: #bbbbbb;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-color);
+}
+
+thead tr:nth-child(1) td {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+thead tr:nth-child(2) {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+thead tr:nth-child(2) th:nth-child(1) {
+    width: 40%;
+}
+
+thead tr:nth-child(2) th:nth-child(2) {
+    width: 25%;
+}
+
+thead tr:nth-child(2) th:nth-child(3) {
+    width: 35%;
+}
+
+tbody {
+}
+
+/* zebra striping */
+tbody tr:nth-child(odd) {
+    background-color: var(--accent-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+
+tfoot {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+tr {
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+}
+
+th, td {
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.events {
+    font-style: italic;
+}
+
+.goalOverpass {
+    background-color: var(--secondary-color);
+    color: white;
+}
