@@ -237,7 +237,7 @@ footer img#footerLogo {
 
 main {
     position: relative;
-    padding: 1rem 0.5rem 0;
+    padding: 1rem 1rem 0;
 }  
 
 .grid-container {
@@ -513,4 +513,116 @@ picture.images-grid-item img {
     z-index: 2;
     font-size: 1.15rem;
     box-shadow: 0 0 10px black;
+}
+
+.form-container {
+    max-width: 20rem;
+    margin-bottom: 1rem;
+}
+
+.form-container fieldset {
+    margin: 1rem 0;
+    border: 2px solid var(--border-color);
+    border-radius: 9px;
+    padding: 0 1rem 1rem;
+}
+
+.form-container legend {
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    color: var(--accent2-color);
+    font-weight: bold;
+}
+
+.form-container label.top, .form-container div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.form-container input, .form-container textarea, .form-container select {
+    -webkit-appearance: none;
+    display: block;
+    border: 1px solid var(--accent2-color);
+    border-radius: 4px;
+    padding: 0.6rem 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: whitesmoke;
+}
+
+.form-container input:active, .form-container input:focus-visible,
+.form-container textarea:active, .form-container textarea:focus-visible, 
+.form-container select:active, .form-container select:focus-visible {
+    border-color: var(--accent2-color);
+}
+
+.form-container input, .form-container textarea {
+    width: calc(100% - 1rem);
+}
+
+.form-container input:required {
+    border-left: red solid 5px;
+}
+
+.form-container input:required:valid {
+    border-left: green solid 5px;
+}
+
+.form-container .table {
+    width: 100%;
+    max-width: 375px;
+    margin: 1rem auto 0;
+    border-collapse: collapse;
+}
+
+.form-container .table thead tr th {
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+.form-container .table thead tr th:nth-child(1) {
+    width: 75%;
+}
+
+.form-container .table thead tr th:nth-child(2) {
+    width: 25%;
+}
+
+/* zebra striping */
+/*.form-container .table tbody tr:nth-child(odd) {
+    background-color: var(--accent-color);
+}*/
+
+.form-container .table tbody tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+.form-container .table tfoot {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.form-container .table tr {
+    border-collapse: collapse;
+    border: 1px solid var(--accent2-color);
+}
+
+.form-container .table th, td {
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid var(--accent2-color);
+}
+
+.form-container button.btn-join {
+    width: 100%;
+    max-width: 375px;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-color-on-color);
+    padding: 0.65rem;
+    font-size: 1.25em;
+    border: 1px solid var(--accent2-color);
+    border-radius: 99px;
+    margin: 0.5rem 0;
 }

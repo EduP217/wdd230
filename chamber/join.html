@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leoncio Prado Commerce Chamber</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+</head>
+<body>
+    <div id="messageBanner">
+        <h3 class="margin-less">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </h3>
+    </div>
+    <header>
+        <div class="container header-grid-container">
+            <picture>
+                <source srcset="images/logo_mini.webp" type="image/webp" >
+                <img id="headerLogo" src="images/logo_mini.PNG" alt="site logo">
+            </picture>
+            <p class="colored siteName">
+                <span class="title">Leoncio Prado</span><br>
+                Chamber of Commerce
+            </p>
+            <div id="menu-ham">
+                <div class="hamburger hamburger-one"></div>
+            </div>
+            <nav id="navigation">
+                <ul id="siteMenu">
+                    <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="/wdd230/chamber/join.html">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="socialButtons">
+                <img src="images/facebook.png" alt="fb icon" class="fb icon">
+                <img src="images/linkedin.png" alt="linkedin icon" class="linkedin icon">
+            </div>
+        </div>
+        <p id="titleCurrentDate" class="colored"></p>
+    </header>
+    <main>
+        <div class="container form-container">
+            <form action="get" action="/wdd230/chamber/thankyou.html">
+                <input type="hidden" name="currentDate" id="currentDate">
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="firstName" class="top">First Name*</label>
+                    <input type="text" name="firstName" required>
+                    <label for="lastName" class="top">Last Name*</label>
+                    <input type="text" name="lastName" required>
+                    <label for="email" class="top">Email*</label>
+                    <input type="email" name="email" placeholder="example@domain.com" required>
+                    <label for="phone" class="top">Cell Phone*</label>
+                    <input type="tel" name="phone" required>
+                    <label for="businessPosition" class="top">Job Position</label>
+                    <input type="text" name="businessPosition" pattern="[A-Za-z- ]{7}">
+                </fieldset>
+                <fieldset>
+                    <legend>Business</legend>
+                    <label for="businessName" class="top">Name*</label>
+                    <input type="text" name="businessName" required>
+                    <label for="businessDescription" class="top">Description</label>
+                    <textarea name="businessDescription" cols="1" rows="5"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <label for="membership" class="top">Benefit Level</label>
+                    <select name="membership">
+                        <option value="">Please Select &#9662</option>
+                        <option value="np">NP Level</option>
+                        <option value="bronze">Bronze Level</option>
+                        <option value="silver">Silver Level</option>
+                        <option value="gold">Gold Level</option>
+                    </select>
+                    <table class="table table-zebra">
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Non Profit Level</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <td>Bronze Level</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Silver Level</td>
+                                <td>$250</td>
+                            </tr>
+                            <tr>
+                                <td>Gold Level</td>
+                                <td>$300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+
+                <button type="submit" class="btn-join">Join Us</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-grid-container">
+            <picture>
+                <source srcset="images/logo.webp" type="image/webp" >
+                <img id="footerLogo" src="images/logo.PNG" alt="site logo" >
+            </picture>
+            <p id="companyInfo" class="colored footerInfo">
+                <span class="title">Leoncio Prado Chamber of Commerce</span> <br>
+                Avenida Alcazar 351 Rimac <br>
+                Cercado de Lima, 15094<br>
+            </p>
+            <p id="companyLocation" class="colored footerInfo">
+                <span class="info">info@lpcc.org.pe</span><br>
+                <span class="info">(+51) 953072361</span><br>
+                <span class="location">
+                    <img src="images/pin.png" alt="pin icon" >
+                    Location Map
+                </span>
+            </p>
+        </div>
+        <div class="divisor"></div>
+        <p id="userInfo" class="colored"></p>
+    </footer>
+
+    <script src="js/join.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
