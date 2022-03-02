@@ -625,6 +625,7 @@ picture.images-grid-item img {
     border: 1px solid var(--accent2-color);
     border-radius: 99px;
     margin: 0.5rem 0;
+    cursor: pointer;
 }
 
 .thankyou-container {
