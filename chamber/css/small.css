@@ -626,3 +626,18 @@ picture.images-grid-item img {
     border-radius: 99px;
     margin: 0.5rem 0;
 }
+
+.thankyou-container {
+    text-align: center;
+}
+
+.thankyou-container h1 {
+    font-size: 3em;
+    background-color: var(--accent-color);
+    padding: 1rem;
+}
+
+.thankyou-container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
