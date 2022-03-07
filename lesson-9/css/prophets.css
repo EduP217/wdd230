@@ -87,6 +87,7 @@ li > img {
 footer {
     border-top: 1px solid var(--border-color);
     padding: 20px;
+    text-align: center;
 }
 
 .caption {
