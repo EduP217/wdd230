@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap');
+
+:root {
+    --primary-color: #555B6E;
+    --secondary-color: #89B0AE;
+    --accent-color: #FFD6BA;
+    --accent2-color: #C08497;
+    --border-color: #BEE3DB;
+}
+
+body {
+    font-size: 16px;
+    font-family: ABeeZee, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+    margin: 1rem;
+    position: relative;
+}
+
+h1 {
+    color: var(--accent2-color);
+    border-bottom: 1px solid #eee;
+    text-shadow: 0 0 15px var(--accent-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--accent2-color);
+    margin: 0;
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    color: var(--accent2-color);
+    margin: 7px 0 5px 0;
+}
+
+p {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 0.35rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > p {
+    text-align: center;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px var(--secondary-color);
+    height: 200px;
+    border: 1px solid var(--border-color);
+}
+
+li > img {
+    width: auto;
+    height: 30px;
+}
+
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.caption {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-color);
+    padding: 0.25rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1rem 1fr;
+}
+
+.caption h6 {
+    position: absolute;
+    top: -2.3rem;
+    left: -0.25rem;
+}
+
+.caption > div {
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 1px solid #bbb;
+}
+
+.caption > p {
+    font-size: 0.75rem;
+}
+
+.most {
+    background-color: #bed;
+}
+
+.fav {
+    background-color: skyblue;
+}
+
+.own {
+    background-color: rosybrown;
+}
