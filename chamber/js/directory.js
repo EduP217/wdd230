@@ -23,6 +23,7 @@ const activeGridView = () => {
         let image = document.createElement('img');
         image.setAttribute('src',`${host}${item.logoURL}`);
         image.setAttribute('alt',item.name);
+        image.classList.add('lazyload');
         let paragraph = document.createElement('p');
         paragraph.innerHTML = `${item.address} </br> ${item.phone}`;
         let link = document.createElement('a');
