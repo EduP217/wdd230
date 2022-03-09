@@ -4,28 +4,28 @@
         "address" : "Av. Samuel Alcázar cuadra 3, Rímac 15093",
         "phone" : "(51) 953 439 470",
         "siteURL" : "https://ax-jewelry.negocio.site",
-        "logoURL" : "images/axjewelry.png"
+        "logoURL" : "images/axjewelry.PNG"
     },
     {
         "name" : "Miguelon",
         "address" : "Av. Samuel Alcázar, Rímac 15094",
         "phone" : "(51) 990 716 088",
         "siteURL" : "https://miguelon.com.pe",
-        "logoURL" : "images/miguelon.png"
+        "logoURL" : "images/miguelon.PNG"
     },
     {
         "name" : "Moments Special Memories",
         "address" : "Av. Samuel Alcázar cuadra 3, Rímac 15093",
         "phone" : "(51) 961 726 722",
         "siteURL" : "https://momentsfloreria.negocio.site",
-        "logoURL" : "images/specialmemories.png"
+        "logoURL" : "images/specialmemories.PNG"
     },
     {
         "name" : "Clinica Dental InNova",
         "address" : "Avenida Alcázar 314 Rimac Municipalidad Metropolitana de Lima, LIMA 25",
         "phone" : "(51) 965 765 365",
         "siteURL" : "https://innovadentalsf.negocio.site",
-        "logoURL" : "images/innova.png"
+        "logoURL" : "images/innova.PNG"
     },
     {
         "name" : "T€C-M@$",
@@ -39,27 +39,27 @@
         "address" : "Av. Samuel Alcázar N°110, Rímac 15093",
         "phone" : "(51) 999 777 222",
         "siteURL" : "https://minoo-mont-fotografia.negocio.site/",
-        "logoURL" : "images/montfotografia.png"
+        "logoURL" : "images/montfotografia.PNG"
     },
     {
         "name" : "La Norteñita",
         "address" : "Av. Samuel Alcazar 1071 Rímac, Cercado de Lima 15094",
         "phone" : "(51) 481 8487",
         "siteURL" : "https://lanorteñita.com.pe",
-        "logoURL" : "images/norteñita.png"
+        "logoURL" : "images/norteñita.PNG"
     },
     {
         "name" : "Salon y Spa by Karen",
         "address" : "Barreda y Aguilar, Rímac 15094",
         "phone" : "(51) 962 721 454",
         "siteURL" : "https://salon-y-spa-by-karen.negocio.site",
-        "logoURL" : "images/salonspabykaren.png"
+        "logoURL" : "images/salonspabykaren.PNG"
     },
     {
         "name" : "CANUTO INVERSIONES",
         "address" : "Av El Sol, Rímac 15093",
         "phone" : "(51) 945 318 454",
         "siteURL" : "https://canuto-inversiones.negocio.site",
-        "logoURL" : "images/canutoinversiones.png"
+        "logoURL" : "images/canutoinversiones.PNG"
     }
 ]
