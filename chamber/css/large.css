@@ -223,4 +223,34 @@
     .images-grid-item img:hover, .images-grid-item img:active {
         box-shadow: 0 0 5px #333;
     }
+
+    .discover-container .rows .row {
+        display: table-row;
+    }
+
+    .discover-container .rows .row p:nth-child(1) {
+        display: table-cell;
+        width: 20%;
+        padding: 2rem 0.5rem;
+    }
+
+    .discover-container .rows .row p:nth-child(2) {
+        display: table-cell;
+        width: 30%;
+        padding: 2rem 0;
+    }
+
+    .discover-container .rows .row p:nth-child(3) {
+        display: table-cell;
+        width: 23%;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .discover-container .rows .row a {
+        display: table-cell;
+        width: 27%;
+        word-break: break-word;
+        padding: 2rem 0.5rem;
+    }
 }

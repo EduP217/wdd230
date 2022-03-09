@@ -642,3 +642,87 @@ picture.images-grid-item img {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
+.discover-container {
+
+}
+
+.discover-container .view-options {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.discover-container button.btn {
+    width: 60px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.discover-container button.btn:hover, .discover-container button.btn:active,
+.discover-container button.btn.hover, .discover-container button.btn.active {
+    background-color: var(--accent2-color);
+}
+
+.discover-container button.btn img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.discover-container .cards {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.discover-container .cards.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0.5rem;
+}
+
+.discover-container .cards .card {
+    margin-bottom: 1rem;
+    box-shadow: 0px 10px 12px 0px #959595;
+    padding: 2rem;
+    text-align: center;
+}
+
+.discover-container .cards .card img {
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 130px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.discover-container .cards .card a {
+    text-decoration: underline;
+}
+
+.discover-container .rows {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.discover-container .rows.active {
+    display: block;
+}
+
+.discover-container .rows .row {
+    padding: 1rem 0.5rem;
+}
+
+.discover-container .rows .row.colored {
+    background-color: var(--accent2-color);
+}
+
+.discover-container .rows .row a {
+    text-decoration: underline;
+    color: var(--accent2-color);
+}
+
+.discover-container .rows .row.colored a {
+    color: var(--accent-color);
+}
