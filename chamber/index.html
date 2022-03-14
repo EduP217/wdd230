@@ -71,15 +71,15 @@
                     <span class="section-title">Weather</span>
                 </p>
                 <div class="weather-graphic">
-                    <img src="images/sun_cloud_weather.png" alt="weather" class="weather-icon" >
-                    <h1>33ºC</h1>
+                    <img src="images/sun_cloud_weather.png" alt="weather" id="weatherIcon" class="weather-icon" >
+                    <h1 id="weatherGrade">33ºC</h1>
                 </div>
-                <h2>Partly Cloudly</h2>
+                <h2 id="weatherType">Partly Cloudly</h2>
                 <div class="divisor margin-less"></div>
                 <table class="weather-info">
                     <tr>
                         <td class="text-right">Wind Speed:</td>
-                        <td class="text-center">2.5 km/h</td>
+                        <td class="text-center"><span id="windSpeed">2.5</span> km/h</td>
                     </tr>
                     <tr>
                         <td class="text-right">Wind Chill:</td>
@@ -164,6 +164,7 @@
         <p id="userInfo" class="colored"></p>
     </footer>
 
+    <script src="js/weatherapi.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/script.js"></script>
 </body>

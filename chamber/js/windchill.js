@@ -9,6 +9,8 @@ const convertToMPH = (kilometers) => {
 const calculateWindchill = (temperatureInCelsius, distanceInKmPH) => {
     let temperatureInFahrenheit = convertToF(temperatureInCelsius);
     let distanceInMPH = convertToMPH(distanceInKmPH);
+    console.log(temperatureInFahrenheit);
+    console.log(distanceInMPH);
 
     let chill = "N/A";
     if (temperatureInFahrenheit<=50 && distanceInMPH>3){
@@ -19,7 +21,29 @@ const calculateWindchill = (temperatureInCelsius, distanceInKmPH) => {
     return chill;
 }
 
-let windchill = calculateWindchill(33, 2.5);
-console.log(windchill);
+const weatherApiKey = "1cd229614ef62dcee00a4d050b36ab98";
+const weatherCityId = 3936456;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${weatherCityId}&appid=${weatherApiKey}&units=metric`;
 
-document.querySelector("#windchillInfo").innerHTML = windchill;
+fetch(apiURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        let currentTemp = Math.round(jsObject.main.temp);
+        let currentWindSpeed = (jsObject.wind.speed * 3.6).toFixed(1);
+        
+        const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+        const desc = jsObject.weather[0].description;
+
+        document.querySelector('#weatherGrade').innerHTML = `${currentTemp}ºC`;
+        document.querySelector('#windSpeed').innerHTML = currentWindSpeed;
+        document.querySelector('#weatherType').innerHTML = desc;
+
+        document.querySelector('#weatherIcon').setAttribute('src', iconsrc);
+        document.querySelector('#weatherIcon').setAttribute('alt', desc);
+
+        let windchill = calculateWindchill(currentTemp, currentWindSpeed);
+        console.log(windchill);
+
+        document.querySelector("#windchillInfo").innerHTML = windchill;
+    });
