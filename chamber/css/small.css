@@ -386,7 +386,8 @@ p span.more-info {
 
 .item-weather h2 {
     margin: 0 0 0.5rem;
-    text-align: right;
+    text-align: center;
+    text-transform: capitalize;
     color: var(--paragraph-color-on-color);
 }
 
