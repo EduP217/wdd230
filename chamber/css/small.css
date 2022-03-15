@@ -447,8 +447,7 @@ p span.more-info {
     left: 1rem;
     top: 1rem;
     margin: 0;
-    text-shadow: 0 0 10px black;
-    color: white;
+    text-shadow: 0 0 10px var(--accent-color);
 }
 
 .text-right {
