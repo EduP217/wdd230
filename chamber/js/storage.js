@@ -8,5 +8,10 @@ if(lastvisit){
     numberOfDays = (daysbetween / FACTOR).toFixed(0);
 }
 
-document.querySelector('#diff-days').innerHTML = `Last time user visit: ${numberOfDays} days.`;
+if(numberOfDays == 0){
+    document.querySelector('#diff-days').innerHTML = `Last time user visit: ${numberOfDays} days.`;
+} else {
+    document.querySelector('#diff-days').innerHTML = 'This is the first day you visit us.';
+}
+
 localStorage.setItem('lastVisit', Date.now());

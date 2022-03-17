@@ -28,7 +28,7 @@
 
     nav ul#siteMenu {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     nav ul#siteMenu li {
