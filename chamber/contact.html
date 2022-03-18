@@ -40,27 +40,57 @@
                 </ul>
             </nav>
             <div class="socialButtons">
-                <img src="images/facebook.png" alt="fb icon" class="fb icon">
-                <img src="images/linkedin.png" alt="linkedin icon" class="linkedin icon">
+                <a href="http://facebook.com/"><img src="images/facebook.png" alt="fb icon" class="fb icon"></a>                    
+                <a href="https://linkedin.com/"><img src="images/linkedin.png" alt="linkedin icon" class="linkedin icon"></a>
             </div>
         </div>
         <p id="titleCurrentDate" class="colored"></p>
     </header>
-    <main class="layout">
-        <div class="container discover-container">
-            <h1>Business Directory</h1>
-            <div class="view-options">
-                <button id="view-option-grid" class="btn active">
-                    <img src="images/grid-fill.png" alt="grid">
-                </button>
-                <button id="view-option-list" class="btn">
-                    <img src="images/outline.png" alt="outline">
-                </button>
+    <main>
+        <div class="container contact-container">
+            <div class="contact-banner">
+                <picture class="banner-image">
+                    <source media="(max-width: 425px)" srcset="images/leoncio_pradox425.png" >
+                    <source media="(max-width: 768px)" srcset="images/leoncio_pradox768.png" >
+                    <img src="images/leoncio_pradox1200.png" alt="contact banner" >
+                </picture>
+                <h1>CONTACT US</h1>
             </div>
-
-            <div class="content-layout">
-                <div class="cards"></div>
-                <div class="rows"></div>
+            <div class="contact-panel">
+                <div class="contact-form">
+                    <h1>CONTACT FORM</h1>
+                    <h3>* Indicates required field</h3>
+                    <form action="file:///D:/Apps/byui-winter-2022/wdd230/chamber/thankyou.html" method="GET">
+                        <input type="hidden" name="formType" value="2">
+                        <input type="hidden" name="currentDate" id="currentDate">
+                        <label for="name">Name*</label>
+                        <input type="text" name="name" required>
+                        <label for="email">Emaill Address*</label>
+                        <input type="text" name="email" required>
+                        <label for="concern">Question/Concern*</label>
+                        <textarea type="text" name="concern" cols="1" rows="3" required></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- INSERT MAPS HERE -->
+            </div>
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <h3>Address</h3>
+                <p>
+                    Av. Alcazar 351 Rimac <br>
+                    Cercado de Lima, 15094 <br>
+                    Lima, Perú
+                </p>
+                <h3>Phone</h3>
+                <h3><a href="tel:+51953072361">(+51) 953072361</a></h3>
+                <h3>Email</h3>
+                <h3><a href="mailto: info@lpcc.org.pe">info@lpcc.org.pe</a></h3>
+                <div class="social-icons">
+                    <a href="http://facebook.com/"><img src="images/facebook.png" alt="fb icon" class="fb icon"></a>                    
+                    <a href="https://linkedin.com/"><img src="images/linkedin.png" alt="linkedin icon" class="linkedin icon"></a>
+                </div>
             </div>
         </div>
     </main>
@@ -88,8 +118,7 @@
         <p id="userInfo" class="colored"></p>
     </footer>
 
-    <script src="js/directory.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/defaultLazyload.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

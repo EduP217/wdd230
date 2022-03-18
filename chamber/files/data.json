@@ -4,62 +4,71 @@
         "address" : "Av. Samuel Alcázar cuadra 3, Rímac 15093",
         "phone" : "(51) 953 439 470",
         "siteURL" : "https://ax-jewelry.negocio.site",
-        "logoURL" : "images/axjewelry.PNG"
+        "logoURL" : "images/axjewelry.PNG",
+        "membership" : "gold"
     },
     {
         "name" : "Miguelon",
         "address" : "Av. Samuel Alcázar, Rímac 15094",
         "phone" : "(51) 990 716 088",
         "siteURL" : "https://miguelon.com.pe",
-        "logoURL" : "images/miguelon.PNG"
+        "logoURL" : "images/miguelon.PNG",
+        "membership" : "silver"
     },
     {
         "name" : "Moments Special Memories",
         "address" : "Av. Samuel Alcázar cuadra 3, Rímac 15093",
         "phone" : "(51) 961 726 722",
         "siteURL" : "https://momentsfloreria.negocio.site",
-        "logoURL" : "images/specialmemories.PNG"
+        "logoURL" : "images/specialmemories.PNG",
+        "membership" : "bronze"
     },
     {
         "name" : "Clinica Dental InNova",
         "address" : "Avenida Alcázar 314 Rimac Municipalidad Metropolitana de Lima, LIMA 25",
         "phone" : "(51) 965 765 365",
         "siteURL" : "https://innovadentalsf.negocio.site",
-        "logoURL" : "images/innova.PNG"
+        "logoURL" : "images/innova.PNG",
+        "membership" : "silver"
     },
     {
         "name" : "T€C-M@$",
         "address" : "Rímac, Lima, Perú Calle N°720, Ricardo Bentin, Cercado de Lima",
         "phone" : "(51) 964 516 277",
         "siteURL" : "https://rimac.tecmas.com.pe",
-        "logoURL" : "images/tecmas.jpg"
+        "logoURL" : "images/tecmas.jpg",
+        "membership" : "gold"
     },
     {
         "name" : "Minoo Mont Fotografía",
         "address" : "Av. Samuel Alcázar N°110, Rímac 15093",
         "phone" : "(51) 999 777 222",
         "siteURL" : "https://minoo-mont-fotografia.negocio.site/",
-        "logoURL" : "images/montfotografia.PNG"
+        "logoURL" : "images/montfotografia.PNG",
+        "membership" : "bronze"
     },
     {
         "name" : "La Norteñita",
         "address" : "Av. Samuel Alcazar 1071 Rímac, Cercado de Lima 15094",
         "phone" : "(51) 481 8487",
         "siteURL" : "https://lanorteñita.com.pe",
-        "logoURL" : "images/norteñita.PNG"
+        "logoURL" : "images/norteñita.PNG",
+        "membership" : "gold"
     },
     {
         "name" : "Salon y Spa by Karen",
         "address" : "Barreda y Aguilar, Rímac 15094",
         "phone" : "(51) 962 721 454",
         "siteURL" : "https://salon-y-spa-by-karen.negocio.site",
-        "logoURL" : "images/salonspabykaren.PNG"
+        "logoURL" : "images/salonspabykaren.PNG",
+        "membership" : "bronze"
     },
     {
         "name" : "CANUTO INVERSIONES",
         "address" : "Av El Sol, Rímac 15093",
         "phone" : "(51) 945 318 454",
         "siteURL" : "https://canuto-inversiones.negocio.site",
-        "logoURL" : "images/canutoinversiones.PNG"
+        "logoURL" : "images/canutoinversiones.PNG",
+        "membership" : "bronze"
     }
 ]

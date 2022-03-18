@@ -1,4 +1,7 @@
 @media(min-width: 769px){
+    .container {
+        padding: 1rem 1rem 0;
+    }
     
     header div#menu-ham {
         display: none;
@@ -252,5 +255,34 @@
         width: 27%;
         word-break: break-word;
         padding: 2rem 0.5rem;
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .contact-container .contact-banner {
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+    
+    .contact-container .contact-panel {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .contact-container .contact-banner h1 {
+        font-size: 4rem;
+    }
+    
+    .contact-form {
+        margin: 4rem 1rem;
+        padding: 3rem 6rem;
+    }
+    
+    .contact-info {
+        padding: 6rem;
     }
 }

@@ -36,7 +36,7 @@
                     <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
                     <li><a href="/wdd230/chamber/directory.html">Directory</a></li>
                     <li><a href="/wdd230/chamber/join.html">Join</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/wdd230/chamber/contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="socialButtons">
@@ -46,9 +46,10 @@
         </div>
         <p id="titleCurrentDate" class="colored"></p>
     </header>
-    <main>
+    <main class="layout">
         <div class="container form-container">
-            <form action="get" action="/wdd230/chamber/thankyou.html">
+            <form action="/wdd230/chamber/thankyou.html" method="GET">
+                <input type="hidden" name="formType" value="1">
                 <input type="hidden" name="currentDate" id="currentDate">
                 <fieldset>
                     <legend>Contact</legend>

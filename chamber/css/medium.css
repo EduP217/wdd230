@@ -111,4 +111,8 @@
     .item-event p.section-paragraph {
         padding: 0 0.5rem;
     }
+
+    .contact-container {
+        padding: 2rem 5rem;
+    }
 }
