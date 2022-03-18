@@ -5,7 +5,9 @@
         "phone" : "(51) 953 439 470",
         "siteURL" : "https://ax-jewelry.negocio.site",
         "logoURL" : "images/axjewelry.PNG",
-        "membership" : "gold"
+        "membership" : "gold",
+        "email" : "info@ax-jewelry.com",
+        "spotlight" : "Thought of you and your style"
     },
     {
         "name" : "Miguelon",
@@ -13,7 +15,9 @@
         "phone" : "(51) 990 716 088",
         "siteURL" : "https://miguelon.com.pe",
         "logoURL" : "images/miguelon.PNG",
-        "membership" : "silver"
+        "membership" : "silver",
+        "email" : "contact@miguelon.com.pe",
+        "spotlight" : "The best grilled burger and sandwiches."
     },
     {
         "name" : "Moments Special Memories",
@@ -21,7 +25,9 @@
         "phone" : "(51) 961 726 722",
         "siteURL" : "https://momentsfloreria.negocio.site",
         "logoURL" : "images/specialmemories.PNG",
-        "membership" : "bronze"
+        "membership" : "bronze",
+        "email" : "info@momentsfloreria.com",
+        "spotlight" : "An unforgettable moment for those we love the most."
     },
     {
         "name" : "Clinica Dental InNova",
@@ -29,7 +35,9 @@
         "phone" : "(51) 965 765 365",
         "siteURL" : "https://innovadentalsf.negocio.site",
         "logoURL" : "images/innova.PNG",
-        "membership" : "silver"
+        "membership" : "silver",
+        "email" : "info@innovadentalsf.com",
+        "spotlight" : "Your smile and dental health are the most important."
     },
     {
         "name" : "T€C-M@$",
@@ -37,15 +45,19 @@
         "phone" : "(51) 964 516 277",
         "siteURL" : "https://rimac.tecmas.com.pe",
         "logoURL" : "images/tecmas.jpg",
-        "membership" : "gold"
+        "membership" : "gold",
+        "email" : "info@tecmas-rimac.com.pe",
+        "spotlight" : "The latest in what matters in tech"
     },
     {
-        "name" : "Minoo Mont Fotografía",
+        "name" : "Minoo Mont Photography",
         "address" : "Av. Samuel Alcázar N°110, Rímac 15093",
         "phone" : "(51) 999 777 222",
         "siteURL" : "https://minoo-mont-fotografia.negocio.site/",
         "logoURL" : "images/montfotografia.PNG",
-        "membership" : "bronze"
+        "membership" : "bronze",
+        "email" : "contact@minoomontfotografia.com",
+        "spotlight" : "Pprofessional Photography / Advertising / Artistic / Events"
     },
     {
         "name" : "La Norteñita",
@@ -53,7 +65,9 @@
         "phone" : "(51) 481 8487",
         "siteURL" : "https://lanorteñita.com.pe",
         "logoURL" : "images/norteñita.PNG",
-        "membership" : "gold"
+        "membership" : "gold",
+        "email" : "reservas@lanorteñita.com.pe",
+        "spotlight" : "With the love of always and the northern seasoning you always prefer"
     },
     {
         "name" : "Salon y Spa by Karen",
@@ -61,7 +75,9 @@
         "phone" : "(51) 962 721 454",
         "siteURL" : "https://salon-y-spa-by-karen.negocio.site",
         "logoURL" : "images/salonspabykaren.PNG",
-        "membership" : "bronze"
+        "membership" : "bronze",
+        "email" : "info@salonyspabykaren.com",
+        "spotlight" : "It's time for a new cut, come now!"
     },
     {
         "name" : "CANUTO INVERSIONES",
@@ -69,6 +85,8 @@
         "phone" : "(51) 945 318 454",
         "siteURL" : "https://canuto-inversiones.negocio.site",
         "logoURL" : "images/canutoinversiones.PNG",
-        "membership" : "bronze"
+        "membership" : "silver",
+        "email" : "info@canuto-inversiones.com",
+        "spotlight" : "Providing solutions in the education sector to people and institutions with an eco-efficient ideology"
     }
 ]

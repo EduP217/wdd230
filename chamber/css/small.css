@@ -269,6 +269,12 @@ main.layout {
 
 .spotlight-icon {
     width: 160px;
+    /*width: 100%;*/
+    padding-top: 0.5rem;
+}
+
+.section-paragraph a {
+    color: white;
 }
 
 .item-join {
