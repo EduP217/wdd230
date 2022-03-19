@@ -9,7 +9,7 @@ const displaySpotlight = (directory) => {
     console.table(directoryFiltered);
 
     for(var i=0;i<=2;i++){
-        const item = directory[i];
+        const item = directoryFiltered[i];
         let container = document.createElement('div');
         container.classList.add('spotlight');
         container.classList.add(`spotlight${i+1}`);
@@ -33,7 +33,7 @@ const displaySpotlight = (directory) => {
         divisor.classList.add('margin-less');
         let infoParagraph = document.createElement('p');
         infoParagraph.classList.add('section-paragraph');
-        infoParagraph.innerHTML = `${item.name} <br> ${item.phone} | `;
+        infoParagraph.innerHTML = `${item.email} <br> ${item.phone} | `;
         let websiteLink = document.createElement('a');
         websiteLink.setAttribute('href',item.siteURL);
         websiteLink.innerHTML = 'website';
@@ -54,18 +54,3 @@ fetch(requestURL)
         //console.table(jsonObject);
         displaySpotlight(jsonObject);
     });
-
-/*
-<div class="spotlight spotlight1">
-                    <p class="section-paragraph">
-                        <span class="section-title">Thankful Transport</span> <br>
-                        <img src="images/truck.png" alt="thankful transport" class="spotlight-icon">
-                    </p>
-                    <h3>"We get it there for you!"</h3>
-                    <div class="divisor margin-less"></div>
-                    <p class="section-paragraph">
-                        hello@thankfultransport.com <br>
-                        +999-999-999 | Website
-                    </p>
-                </div>
-                */
