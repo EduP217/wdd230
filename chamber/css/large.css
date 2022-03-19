@@ -285,4 +285,17 @@
     .contact-info {
         padding: 6rem;
     }
+    
+    table.table-info tr {
+        display: table-row;
+        padding-bottom: inherit;
+    }
+    
+    table.table-info td:nth-child(odd) {
+        background-color: unset;
+    }
+    
+    table.table-info tr:nth-child(even) {
+        background-color: whitesmoke;
+    }
 }

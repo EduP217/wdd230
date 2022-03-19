@@ -618,7 +618,7 @@ picture.images-grid-item img {
     border: 1px solid var(--accent2-color);
 }
 
-.form-container .table th, td {
+.form-container .table th, .form-container .table td {
     padding: 10px 0;
     text-align: center;
     border: 1px solid var(--accent2-color);
@@ -860,4 +860,41 @@ picture.images-grid-item img {
 
 .contact-info a {
     text-decoration: underline;
+}
+
+table.table-info {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 520px;
+}
+
+table.table-info th, table.table-info td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 1rem;
+}
+
+table.table-info tr {
+    display: grid;
+    padding-bottom: 1rem;
+}
+
+table.table-info td:nth-child(odd) {
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.mail-card {
+    width: 100%;
+    max-width: 425px;
+    margin: 2rem auto;
+    border-radius: 16px;
+    box-shadow: 0 0 11px -5px black;
+    padding: 0.5rem 0;
+}
+
+.mail-card p {
+    padding: 1rem;
 }
