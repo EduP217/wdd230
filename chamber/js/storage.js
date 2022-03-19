@@ -10,8 +10,8 @@ if(lastvisit){
 
 console.log(`numberOfDays : ${numberOfDays}`);
 
-if(numberOfDays == 0){
-    document.querySelector('#diff-days').innerHTML = `Last time user visit: ${numberOfDays} days.`;
+if(numberOfDays > 0){
+    document.querySelector('#diff-days').innerHTML = `Last time user visits: ${numberOfDays} days.`;
 } else {
     document.querySelector('#diff-days').innerHTML = 'This is the first day you visit us.';
 }
