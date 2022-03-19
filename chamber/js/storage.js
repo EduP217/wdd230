@@ -8,6 +8,8 @@ if(lastvisit){
     numberOfDays = (daysbetween / FACTOR).toFixed(0);
 }
 
+console.log(`numberOfDays : ${numberOfDays}`);
+
 if(numberOfDays == 0){
     document.querySelector('#diff-days').innerHTML = `Last time user visit: ${numberOfDays} days.`;
 } else {
