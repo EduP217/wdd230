@@ -298,4 +298,8 @@
     table.table-info tr:nth-child(even) {
         background-color: whitesmoke;
     }
+
+    .section-label {
+        font-size: 1rem !important;
+    }
 }

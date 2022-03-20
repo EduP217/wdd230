@@ -419,12 +419,17 @@ p span.more-info {
     background-color: var(--accent-color);
     padding: 0.75rem;
     border-radius: 15px;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0;
     box-shadow: 0 0 20px 0 black;
     font-family: var(--heading-font);
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    align-items: flex-start;
+    -webkit-appearance: button;
+    text-transform: none;
 }
 
 .btn-join {
@@ -444,7 +449,7 @@ p span.more-info {
     object-position: center center;
 }
 
-.item-hero button.btn-join {
+.item-hero .btn-join {
     position: absolute;
     width: 200px;
     bottom: 1rem;
@@ -456,7 +461,9 @@ p span.more-info {
     left: 1rem;
     top: 1rem;
     margin: 0;
-    text-shadow: 0 0 10px var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.1rem 0.5rem;
 }
 
 .text-right {
@@ -624,7 +631,7 @@ picture.images-grid-item img {
     border: 1px solid var(--accent2-color);
 }
 
-.form-container button.btn-join {
+.form-container .btn-join {
     width: 100%;
     max-width: 375px;
     background-color: var(--accent2-color);
