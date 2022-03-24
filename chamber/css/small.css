@@ -353,8 +353,8 @@ p span.section-title {
     font-family: var(--heading-font);
     font-size: 24px;
     font-weight: bold;
-    color: yellow;
-    text-shadow: 0 0 15px white;
+    /*color: yellow;*/
+    text-shadow: 0 0 15px var(--accent-color);
 }
 
 .section-label {
