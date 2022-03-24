@@ -276,7 +276,8 @@ main.layout {
 }
 
 .section-paragraph a {
-    color: white;
+    /*color: white;*/
+    color: black;
 }
 
 .item-join {
@@ -343,7 +344,7 @@ p span.title {
 }
 
 p.section-paragraph {
-    color: var(--paragraph-color-on-color);
+    /*color: var(--paragraph-color-on-color);*/
     text-shadow: 0 0 2px black;
     font-size: 17px;
 }
@@ -371,7 +372,7 @@ p span.more-info {
 
 .spotlight h3 {
     margin: 10px 0;
-    color: var(--paragraph-color-on-color);
+    /*color: var(--paragraph-color-on-color);*/
     font-style: oblique;
 }
 
@@ -399,7 +400,7 @@ p span.more-info {
     margin: 0 0 0.5rem;
     text-align: center;
     text-transform: capitalize;
-    color: var(--paragraph-color-on-color);
+    /*color: var(--paragraph-color-on-color);*/
 }
 
 .item-weather .weather-info {
@@ -409,7 +410,8 @@ p span.more-info {
 
 .item-weather .weather-info, .item-weather .weather-info tr, .item-weather .weather-info tr td {
     border: none;
-    color: var(--paragraph-color-on-color);
+    /*color: var(--paragraph-color-on-color);*/
+    font-weight: bold;
 }
 
 .weather-info tr td {
