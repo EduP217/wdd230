@@ -363,7 +363,8 @@ p span.section-title {
 }
 
 p span.more-info {
-    color: yellow;
+    /*color: yellow;*/
+    color: var(--accent-color);
 }
 
 .margin-less {
