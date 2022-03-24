@@ -364,7 +364,8 @@ p span.section-title {
 
 p span.more-info {
     /*color: yellow;*/
-    color: var(--accent-color);
+    color: black;
+    text-shadow: 0 0 5px white;
 }
 
 .margin-less {
