@@ -354,7 +354,8 @@ p span.section-title {
     font-size: 24px;
     font-weight: bold;
     /*color: yellow;*/
-    text-shadow: 0 0 15px var(--accent-color);
+    color: var(--primary-color);
+    text-shadow: 0 0 2px white;
 }
 
 .section-label {
@@ -364,8 +365,9 @@ p span.section-title {
 
 p span.more-info {
     /*color: yellow;*/
-    color: black;
-    text-shadow: 0 0 5px white;
+    color: var(--primary-color);
+    text-shadow: 0 0 2px white;
+    font-weight: bold;
 }
 
 .margin-less {
