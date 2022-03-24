@@ -711,7 +711,7 @@ picture.images-grid-item img {
     width: 100%;
     margin: 0.5rem 0;
     height: 130px;
-    object-fit: cover;
+    object-fit: fill;
     object-position: top center;
 }
 
