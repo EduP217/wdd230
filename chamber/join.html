@@ -54,27 +54,27 @@
                 <fieldset>
                     <legend>Contact</legend>
                     <label for="firstName" class="top">First Name*</label>
-                    <input type="text" name="firstName" required>
+                    <input type="text" name="firstName" id="firstName" required>
                     <label for="lastName" class="top">Last Name*</label>
-                    <input type="text" name="lastName" required>
+                    <input type="text" name="lastName" id="lastName" required>
                     <label for="email" class="top">Email*</label>
-                    <input type="email" name="email" placeholder="example@domain.com" required>
+                    <input type="email" name="email" id="email" placeholder="example@domain.com" required>
                     <label for="phone" class="top">Cell Phone*</label>
-                    <input type="tel" name="phone" required>
+                    <input type="tel" name="phone" id="phone" required>
                     <label for="businessPosition" class="top">Job Position</label>
-                    <input type="text" name="businessPosition" pattern="[A-Za-z- ]{7}">
+                    <input type="text" name="businessPosition" id="businessPosition" pattern="[A-Za-z- ]{7}">
                 </fieldset>
                 <fieldset>
                     <legend>Business</legend>
                     <label for="businessName" class="top">Name*</label>
-                    <input type="text" name="businessName" required>
+                    <input type="text" name="businessName" id="businessName" required>
                     <label for="businessDescription" class="top">Description</label>
-                    <textarea name="businessDescription" cols="1" rows="5"></textarea>
+                    <textarea name="businessDescription" id="businessDescription" cols="1" rows="5"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Membership</legend>
                     <label for="membership" class="top">Benefit Level</label>
-                    <select name="membership">
+                    <select name="membership" id="membership">
                         <option value="">Please Select &#9662</option>
                         <option value="np">NP Level</option>
                         <option value="bronze">Bronze Level</option>

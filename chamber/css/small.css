@@ -546,7 +546,7 @@ picture.images-grid-item img {
 .form-container legend {
     margin: 0 1rem;
     padding: 0 0.5rem;
-    color: var(--accent2-color);
+    color: black;
     font-weight: bold;
 }
 
@@ -594,7 +594,7 @@ picture.images-grid-item img {
 }
 
 .form-container .table thead tr th {
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -634,11 +634,11 @@ picture.images-grid-item img {
 .form-container .btn-join {
     width: 100%;
     max-width: 375px;
-    background-color: var(--accent2-color);
-    color: var(--paragraph-color-on-color);
+    background-color: var(--accent-color);
+    color: black;
     padding: 0.65rem;
     font-size: 1.25em;
-    border: 1px solid var(--accent2-color);
+    border: 1px solid var(--accent-color);
     border-radius: 99px;
     margin: 0.5rem 0;
     cursor: pointer;
