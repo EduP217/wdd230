@@ -1,5 +1,5 @@
-//fetch("./pages/header.html")
-fetch("wdd230/templeInn/pages/header.html")
+fetch("./pages/header.html")
+//fetch("https://edup217.github.io/wdd230/templeInn/pages/header.html")
 .then(response => {
     return response.text()
 })
@@ -7,8 +7,8 @@ fetch("wdd230/templeInn/pages/header.html")
     document.querySelector("header").innerHTML = data;
 });
 
-//fetch("./pages/footer.html")
-fetch("wdd230/templeInn/pages/footer.html")
+fetch("./pages/footer.html")
+//fetch("https://edup217.github.io/wdd230/templeInn/pages/footer.html")
 .then(response => {
     return response.text()
 })
