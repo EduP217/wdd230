@@ -1,0 +1,137 @@
+.header-container {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.header-container .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+.header-container picture {
+    flex-basis: 20%;
+}
+
+.header-container img#headerLogo {
+    max-width: 125px;
+    width: 100%;
+}
+
+.header-container h1.siteName {
+    flex-basis: 60%;
+}
+
+.header-container div.socialButtons {
+    text-align: center;
+}
+
+.header-container div#menu-ham {
+    text-align: center;
+    flex-basis: 35px;
+}
+
+.header-container nav#navigation {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.header-container .open {
+    padding: 0.5rem 0;
+    transition:0.3s;
+}
+
+.header-container div#social-buttons {
+    display: none;
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.header-container div#social-buttons.open {
+    display: block;
+}
+
+.header-container div#social-buttons a {
+    padding: 0 0.25rem;
+}
+
+.banner-container {
+    background-color: var(--accent2-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.banner-container .container {
+    display: block;
+    gap: 0.5rem;
+}
+
+.banner-container .advice {
+    color: var(--advice-color);
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    word-break: break-word;
+}
+
+.footer-container .footer-logo picture img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.footer-container .footer-logo h3 {
+    padding: 0;
+}
+
+.footer-container .footer-navigation {
+    display: none;
+}
+
+.footer-container .footer-info {
+    padding-top: 1rem;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.footer-container .footer-info .icon-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 0;
+}
+
+.footer-container .footer-info .social-icons {
+    padding-top: 0.5rem;
+}
+
+.footer-container .footer-info .social-icons a {
+    padding: 0 0.3rem;
+}
+
+.footer-container .footer-copyright {
+
+}
+
+.footer-container .footer-copyright ul {
+    padding: 0;
+    margin: 0;
+    line-height: 1.75;
+}
+
+.footer-container .footer-copyright ul li {
+    list-style: none;
+    font-family: var(--paragraph-font);
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.footer-container .footer-copyright ul .separador {
+    display: none;
+}

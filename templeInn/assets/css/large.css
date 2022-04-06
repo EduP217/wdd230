@@ -1,0 +1,111 @@
+@media(min-width: 769px){
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    header nav ul li {
+        border-right: unset;
+        border-top: 2px solid var(--border-color);
+    }
+    
+    header nav ul li:last-child {
+        border-right: 2px solid var(--border-color);
+    }
+
+    header nav ul .dropdown {
+        position: relative;
+    }
+
+    header nav ul .dropdown ul {
+        position: absolute;
+    }
+
+    header nav ul .dropdown ul li {
+        border: 2px solid var(--border-color);
+    }
+
+    header nav ul .dropdown ul li:last-child {
+        border-top: unset;
+    }
+
+    .header-container .container {
+        display: grid;
+        grid-template-columns: 6em 16em auto 7em;
+        justify-content: normal;
+    }
+
+    .header-container h1.siteName {
+        padding: 0.5rem;
+    }
+
+    .header-container div#menu-ham {
+        display: none;
+    }
+
+    .header-container div#social-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner-container .container {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+
+    .container.container-is-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-container .footer-logo {
+        display: grid;
+        grid-template-columns: 11rem 10rem;
+        text-align: left;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 0.5rem;
+    }
+
+    .footer-container .footer-logo picture {
+        grid-column: 1;
+        grid-row: 1/-1;
+    }
+
+    .footer-container .footer-logo h1 {
+        align-self: end;
+    }
+
+    .footer-container .footer-logo h3 {
+        align-self: start;
+    }
+
+    .footer-container .footer-navigation {
+        display: block;
+    }
+
+    .footer-container .footer-info {
+        padding-top: unset;
+    }
+    
+    .footer-container .footer-copyright ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-container .footer-copyright ul .separador {
+        display: block;
+    }
+
+    .footer-container .footer-copyright ul .separador::after {
+        content: "|";
+    }
+
+}

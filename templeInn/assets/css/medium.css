@@ -1,0 +1,21 @@
+@media(min-width: 426px){
+    .header-container picture {
+        flex-basis: 80px;
+    }
+
+    .header-container h1.siteName {
+        flex-basis: 70%;
+    }
+}
+
+@media(min-width: 580px){
+    .header-container h1.siteName {
+        flex-basis: 75%;
+    }
+}
+
+@media(min-width: 700px){
+    .header-container h1.siteName {
+        flex-basis: 80%;
+    }
+}
