@@ -1,23 +1,3 @@
-/*
-//fetch("./pages/header.html")
-fetch("https://edup217.github.io/wdd230/templeInn/pages/header.html")
-.then(response => {
-    return response.text()
-})
-.then(data => {
-    document.querySelector("header").innerHTML = data;
-});
-
-//fetch("./pages/footer.html")
-fetch("https://edup217.github.io/wdd230/templeInn/pages/footer.html")
-.then(response => {
-    return response.text()
-})
-.then(data => {
-    document.querySelector("footer").innerHTML = data;
-});
-*/
-
 let months = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 let weekDay = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
 
@@ -45,7 +25,7 @@ const recaulculateResponsive = () => {
         isTablet = false;
         isDesktop = false;
     }
-    
+
     document.getElementById('currentYear').innerHTML = currentYear;
     document.getElementById('studentName').innerHTML = "Eduardo Prieto";
     document.getElementById('lastModified').innerHTML = `Last Modification: ${lastupdateDateTime}`;

@@ -1,10 +1,64 @@
 @media(min-width: 426px){
+
+    body{
+        font-size: 14px;
+    }
+
     .header-container picture {
         flex-basis: 80px;
     }
 
     .header-container h1.siteName {
         flex-basis: 70%;
+    }
+
+    .home-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+
+    .home-grid-container .weather-heading {
+        grid-column: 1;
+        grid-row: 5;
+        padding: 0 1rem;
+    }
+
+    .home-grid-container .weather-section {
+        grid-column: 1;
+        grid-row: 6;
+        padding: 0 2.5rem;
+    }
+
+    .home-grid-container .agenda-heading {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .home-grid-container .reservation-info {
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    .banner-image-container {
+        height: 400px;
+    }
+
+    .home-grid-container .temple-selected {
+        height: 350px;
+    }
+
+    .booking {
+        right: 2rem;
+        top: -2rem;
+        font-size: 2em;
+    }
+
+    .home-grid-container .temple-selected .dialog {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 300px;  
     }
 }
 

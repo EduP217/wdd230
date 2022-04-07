@@ -1,4 +1,8 @@
 @media(min-width: 769px){
+    body {
+        font-size: 16px;
+    }
+
     header nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -108,4 +112,31 @@
         content: "|";
     }
 
+    .banner-image-container {
+        height: 650px;
+    }
+
+    .home-grid-container p.welcome-description {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 2rem;
+        line-height: 1.5;
+    }
+
+    .home-grid-container .welcome-image {
+        grid-column: 2;
+        grid-row: 3;
+        width: 100%;
+        display: block;
+    }
+
+    .home-grid-container .temple-selected {
+        height: 500px;
+    }
+
+    .booking {
+        right: 3rem;
+        top: -3rem;
+        font-size: 3em;
+    }
 }

@@ -33,7 +33,7 @@ html, body {
   
 body{
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,7 +47,7 @@ p {
     word-spacing: 2.5px;
     padding: 0;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 p.colored, span.colored {
@@ -57,6 +57,7 @@ p.colored, span.colored {
 a {
     text-decoration: none;
     font-family: sans-serif;
+    color: var(--paragraph-color);
 }
 
 header, footer {
@@ -223,10 +224,11 @@ header nav ul .dropdown li:hover, header nav ul .dropdown li:focus {
 .container {
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 
 div.divisor {
-    border: 2px solid whitesmoke;
+    border: 1px solid var(--border-color);
     height: auto;
     width: initial;
     margin: 15px 0;
@@ -290,4 +292,36 @@ main.layout {
 .icon {
     width: 30px;
     cursor: pointer;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border-color);
+    background-color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    max-width: 280px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table thead tr th {
+    background-color: var(--accent-color);
+}
+
+table tr {
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+}
+
+table th, table td {
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid var(--border-color);
 }

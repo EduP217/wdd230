@@ -36,6 +36,7 @@
 .header-container nav#navigation {
     text-align: center;
     flex-basis: 100%;
+    z-index: 1;
 }
 
 .header-container .open {
@@ -134,4 +135,147 @@
 
 .footer-container .footer-copyright ul .separador {
     display: none;
+}
+
+.banner-image-container picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.home-grid-container {
+    position: relative;
+    padding-top: 1rem;
+}
+
+.home-grid-container .heading1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    grid-column: 1/-1;
+    grid-row: 1;
+    padding: 0 1rem;
+}
+
+.home-grid-container .subheading1 {
+    margin-top: 0;
+    padding-top: 0;
+    grid-column: 1/-1;
+    grid-row: 2;
+    padding: 0 1rem;
+}
+
+.home-grid-container .temple-selected {
+    grid-column: 1/-1;
+    grid-row: 4;
+    position: relative;
+}
+
+.home-grid-container .temple-selected img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.home-grid-container .temple-selected .dialog {
+    position: relative;
+    background-color: #dbd4ce70;
+    padding: 1rem;    
+}
+
+.home-grid-container .temple-selected .dialog p {
+    font-size: 1.22em;
+}
+
+.home-grid-container .banner-coupon-container {
+    grid-column: 1/-1;
+    grid-row: 7;
+    background-color: var(--text-background-color);
+    text-align: center;
+    margin-top: 2rem;
+    padding: .5rem;
+}
+
+.home-grid-container .banner-coupon-container .advice {
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+}
+
+.home-grid-container .weather-graphic {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 1rem;
+}
+
+.home-grid-container .weather-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.home-grid-container h1#weatherGrade {
+    font-size: 2.5em;
+}
+
+.home-grid-container .weather-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    row-gap: 0.5rem;
+}
+
+.home-grid-container .weather-info h4 {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.home-grid-container p.welcome-description {
+    font-size: 1.22em;
+}
+
+.home-grid-container .banner-coupon-container .advice a {
+    background-color: var(--accent2-color);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.home-grid-container .welcome-image {
+    display: none;
+}
+
+.home-grid-container p.welcome-description {
+    grid-column: 1/-1;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.booking {
+    position: absolute;
+    right: 1.5rem;
+    top: -1.5rem;
+    font-size: 1.5em;
+    padding: 0.5rem 2rem;
+    background-color: var(--accent-color);
+}
+
+.banner-image-container {
+    height: 270px;
+}
+
+.home-grid-container .weather-heading {
+    padding: 0 1rem;
+}
+
+.home-grid-container .weather-section {
+    padding: 1rem 2rem;
+}
+
+.home-grid-container .agenda-heading {
+    padding: 0 1rem;
 }
