@@ -53,7 +53,7 @@ function output(listOfTemples){
 }
 
 let fetchTemples = 
-    fetch("https://github.com/EduP217/wdd230/templeinn/assets/data/temples.json")
+    fetch("https://github.com/EduP217/wdd230/templeInn/data/temples.json")
     .then((res) => {
         return res.json() 
     })
