@@ -83,8 +83,10 @@ function output(listOfTemples){
     });    
 }
 
+/* https://mocki.io/v1/199bbdbf-8c81-4ec9-ac44-c2465eff4284 */
+
 let fetchTemples = 
-    fetch("https://mocki.io/v1/199bbdbf-8c81-4ec9-ac44-c2465eff4284")
+    fetch("https://edup217.github.io/wdd230/templeInn/data/temples.json")
     .then((res) => {
         return res.json() 
     })
