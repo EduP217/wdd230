@@ -1,8 +1,26 @@
 let temples = [];
 
+function get_localstorage(id){
+    let storage = localStorage.getItem(`temple_${id}`);
+    if(storage == 'like'){
+        return true;
+    }
+    return false;
+}
+
+function set_localstorage(id){
+    if(get_localstorage(id)){
+        localStorage.setItem(`temple_${id}`,'unlike');
+    } else {
+        localStorage.setItem(`temple_${id}`,'like');
+    }
+}
+
 function output(listOfTemples){
     let root = document.querySelector('#temple-grid');
     listOfTemples.forEach(t => {
+        let id = t['id'];
+
         let card = document.createElement('article');
         card.classList.add("card");
 
@@ -37,7 +55,20 @@ function output(listOfTemples){
         btnLike.setAttribute("type","button");
         btnLike.classList.add("btn");
         btnLike.classList.add("btn-like");
-        btnLike.innerHTML = "Like"
+        btnLike.innerHTML = "Like";
+        btnLike.addEventListener("click", function () {
+            if(get_localstorage(id)){
+                btnLike.classList.toggle("active");
+                localStorage.setItem(`temple_${id}`,'unlike');
+            } else {
+                btnLike.classList.toggle("active");
+                localStorage.setItem(`temple_${id}`,'like');
+            }
+        });
+
+        if(get_localstorage(id)){
+            btnLike.classList.add("active");
+        }
 
         cardImage.appendChild(templeImage);
         cardBody.appendChild(templeName);
@@ -53,13 +84,15 @@ function output(listOfTemples){
 }
 
 let fetchTemples = 
-    fetch("https://github.com/EduP217/wdd230/templeInn/data/temples.json")
+    fetch("https://mocki.io/v1/199bbdbf-8c81-4ec9-ac44-c2465eff4284")
     .then((res) => {
         return res.json() 
     })
     .then((list) => {
         temples = list;
+        console.table(temples);
     })
     .finally(()=>{
         output(temples);
     });
+

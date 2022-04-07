@@ -568,6 +568,6 @@
     background-color: white;
 }
 
-.btn-like.active {
+.btn-like:hover, .btn-like:focus, .btn-like.active {
     background-color: var(--accent2-color);
 }
