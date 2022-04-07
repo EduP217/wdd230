@@ -53,7 +53,7 @@ function output(listOfTemples){
 }
 
 let fetchTemples = 
-    fetch("https://byui-cse.github.io/cse121b-course/week05/temples.json")
+    fetch("https://github.com/EduP217/wdd230/templeinn/assets/data/temples.json")
     .then((res) => {
         return res.json() 
     })
