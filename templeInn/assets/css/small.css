@@ -187,7 +187,7 @@
 .home-grid-container .temple-selected .dialog p {
     font-size: 1.22em;
 }
-
+/*
 .home-grid-container .banner-coupon-container {
     grid-column: 1/-1;
     grid-row: 7;
@@ -201,7 +201,7 @@
     margin: 0;
     padding: 0;
     line-height: 2.5;
-}
+}*/
 
 .home-grid-container .weather-graphic {
     display: grid;
@@ -238,13 +238,6 @@
     font-size: 1.22em;
 }
 
-.home-grid-container .banner-coupon-container .advice a {
-    background-color: var(--accent2-color);
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-    border: 1px solid var(--border-color);
-}
-
 .home-grid-container .welcome-image {
     display: none;
 }
@@ -278,4 +271,303 @@
 
 .home-grid-container .agenda-heading {
     padding: 0 1rem;
+}
+
+.reservation-container {
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.reservation-container h1 {
+    text-align: center;
+}
+
+.reservation-container fieldset {
+    margin: 1rem 0;
+    border: 2px solid var(--border-color);
+    border-radius: 9px;
+    padding: 0 1rem 1rem;
+}
+
+.reservation-container legend {
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.reservation-container label.top, .reservation-container div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--advice-color);
+    font-weight: bold;
+}
+
+.reservation-container input, .reservation-container textarea, .reservation-container select {
+    -webkit-appearance: none;
+    display: block;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.6rem 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: whitesmoke;
+}
+
+.reservation-container input:active, .reservation-container input:focus-visible,
+.reservation-container textarea:active, .reservation-container textarea:focus-visible, 
+.reservation-container select:active, .reservation-container select:focus-visible {
+    border-color: var(--border-color);
+}
+
+.reservation-container input, .reservation-container textarea {
+    width: calc(100% - 1rem);
+}
+
+.reservation-container input:required {
+    border-left: red solid 3px;
+}
+
+.reservation-container input:required:valid {
+    border-left: green solid 3px;
+}
+
+.reservation-container .btn-reserve {
+    width: 100%;
+    max-width: 375px;
+    background-color: var(--accent2-color);
+    color: black;
+    padding: 0.65rem;
+    font-size: 1.25em;
+    border: 1px solid var(--border-color);
+    border-radius: 99px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.reservation-container .btn-reserve:hover, .reservation-container .btn-reserve:active, .reservation-container .btn-reserve:focus {
+    background-color: var(--accent-color);
+}
+
+.reception-container {
+    padding: 0 1rem;
+    display: block;
+}
+
+.reception-container h1 {
+    text-align: center;
+}
+
+.reception-container img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reception-container>p {
+    font-size: 1.22em;
+    text-align: center;
+    margin: 1rem;
+}
+
+.reception-container .reception-information p {
+    font-size: 1.22em;
+    margin: 1rem 0;
+}
+
+.banner-coupon-container {
+    background-color: var(--text-background-color);
+    text-align: center;
+    margin-top: 2rem;
+    padding: .5rem;
+}
+
+.banner-coupon-container .advice {
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+}
+
+.banner-coupon-container .advice a {
+    background-color: var(--accent2-color);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.services-image-container {
+    height: 230px;
+}
+
+.services-image-container picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.temple-missionary-container {
+    padding: 1rem;
+}
+
+.temple-missionary-container>p {
+    font-size: 1.22em;
+    margin: 1rem 0;
+}
+
+.temple-missionary-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: .5rem;
+    max-height: 350px;
+}
+
+.contact-container {
+    padding: 0 1rem;
+}
+
+.contact-container .contact-info {
+    padding: 0 1rem;
+}
+
+.contact-container .contact-info iframe {
+    width: 100%;
+}
+
+.contact-container .contact-info p {
+    margin: 1rem 0;
+    font-size: 1.22em;
+}
+
+.contact-container .contact-info .social-icons {
+    padding: 1rem 0;
+    display: flex;
+    column-gap: 1rem;
+}
+
+
+.contact-container .contact-form form {
+    padding: 0 1rem;
+}
+
+.contact-container .contact-form label, .contact-container .contact-form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--paragraph-color);
+    font-weight: bold;
+}
+
+.contact-container .contact-form input, .contact-container .contact-form textarea, .contact-container .contact-form select {
+    -webkit-appearance: none;
+    display: block;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.6rem 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: whitesmoke;
+}
+
+.contact-container .contact-form input:active, .contact-container .contact-form input:focus-visible,
+.contact-container .contact-form textarea:active, .contact-container .contact-form textarea:focus-visible, 
+.contact-container .contact-form select:active, .contact-container .contact-form select:focus-visible {
+    border-color: var(--border-color);
+}
+
+.contact-container .contact-form input, .contact-container .contact-form textarea {
+    width: calc(100% - 1rem);
+}
+
+.contact-container .contact-form button.btn {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+    float: right;
+    background: var(--accent2-color);
+    border: 2px solid var(--border-color);
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-container .contact-form button.btn:hover, .contact-container .contact-form button.btn:active {
+    background-color: var(--accent-color);
+}
+
+.contact-container .contact-form textarea {
+    resize: none;
+}
+
+.thankyoupage-container {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.thankyoupage-container h1 {
+    background-color: var(--text-background-color);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.thankyoupage-container #reservation {
+    display: none;
+}
+
+.thankyoupage-container #contact {
+    display: none;
+}
+
+.thankyoupage-container #reservation.active {
+    display: block;
+}
+
+.thankyoupage-container #contact.active {
+    display: block;
+}
+
+.temple-grid-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0.5rem;
+}
+
+.temple-grid-container .card {
+    margin: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 9px;
+}
+
+.temple-grid-container .card .card-image {
+    height: 275px;
+}
+
+.temple-grid-container .card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 9px 9px 0 0;
+}
+
+.temple-grid-container .card .card-body {
+    padding: .5rem 1rem;
+}
+
+.temple-grid-container .card .card-body h2, .temple-grid-container .card .card-body h3 {
+    margin: 0;
+    padding: 0;    
+}
+
+.btn-like {
+    background-color: white;
+}
+
+.btn-like.active {
+    background-color: var(--accent2-color);
 }

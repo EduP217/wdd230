@@ -1,0 +1,2 @@
+let dateAndTime = `${currentDate.getMonth()+1}/${currentDate.getDate()}/${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+document.querySelector("#currentDate").value = dateAndTime;

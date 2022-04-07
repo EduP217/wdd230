@@ -59,91 +59,8 @@
     </header>
 
     <main>
-        <div class="banner-image-container">
-            <picture>
-                <source media="(max-width: 425px)" srcset="assets/images/bannerx425.png" >
-                <source media="(max-width: 768px)" srcset="assets/images/bannerx768.png" >
-                <img src="assets/images/bannerx1200.png" alt="Bethesda Temple" >
-            </picture>
-        </div>
         <div class="container">
-            <button type="button" class="btn booking">BOOK NOW!</button>
-            <div class="home-grid-container">
-                <h1 class="heading1">Welcome to Bethesda, MD Temple Inn & Suites</h1>
-                <h3 class="subheading1">Our essence is your well being</h3>
-                <p class="welcome-description">
-                    Our hotel is ready to welcome you and your whole family. Experience the joy and comfort of sleeping near one of the most wonderful temples of the Church of Jesus Christ of Latter-day Saints. <br>
-                    Here you can enjoy a beautiful time with your family.
-                    We have very spacious rooms, with beautiful windows. The comfort of the guests is our main objective. Clean rooms, friendly services, and affordable prices.<br>
-                    We have all you need to feel the love and peace necessary for your ecclesiastical preparation. 
-                    Our essence is your personal well-being and we guarantee that you will enjoy your stay and the many services we offer. Make your reservation now.
-                </p>
-                <img src="assets/images/home-image-1.png" alt="home image 1" class="welcome-image">
-                <div class="temple-selected">
-                    <img src="assets/images/bannerF.png" alt="bethesda temple">
-                    <div class="dialog">
-                        <h1>Bethesda,MD Temple</h1>
-                        <p>
-                            The Bethesda Maryland Temple is one of five temples with a statue of the angel Moroni holding the gold plates that in LDS tradition are the source of the Book of Mormon
-                        </p>
-                    </div>                    
-                </div>
-                <h1 class="weather-heading">Weather</h1>
-                <div class="weather-section">
-                    <div class="weather-graphic">
-                        <img src="assets/images/suncloudy.png" alt="weather" id="weatherIcon" class="weather-icon" >
-                        <h1 id="weatherGrade">33ºC</h1>
-                    </div>
-                    <h2 id="weatherType">Partly Cloudly</h2>
-                    <div class="divisor margin-less"></div>
-                    <div class="weather-info">
-                        <h4>Wind Speed:</h4>
-                        <h4><span id="windSpeed">2.5</span> km/h</h4>
-                        <h4>Wind Chill:</h4>
-                        <h4><span id="windchillInfo">N/A</span></h4>
-                    </div>
-                </div>                
-                <h1 class="agenda-heading">Reservation Agenda</h1>
-                <table class="reservation-info">
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Time</th>
-                            <th># Rooms</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lunes</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Martes</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Miercoles</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="banner-coupon-container">
-            <h3 class="advice">Use code <u>25DSCTOFF</u> & receive 25% discount in <a href="#">booking</a></h3>
+            <div id="temple-grid" class="temple-grid-container"></div>
         </div>
     </main>
 
@@ -217,5 +134,6 @@
     </footer>
 
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/temple.js"></script>
 </body>
 </html>

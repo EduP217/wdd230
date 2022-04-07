@@ -59,91 +59,66 @@
     </header>
 
     <main>
-        <div class="banner-image-container">
-            <picture>
-                <source media="(max-width: 425px)" srcset="assets/images/bannerx425.png" >
-                <source media="(max-width: 768px)" srcset="assets/images/bannerx768.png" >
-                <img src="assets/images/bannerx1200.png" alt="Bethesda Temple" >
-            </picture>
-        </div>
         <div class="container">
-            <button type="button" class="btn booking">BOOK NOW!</button>
-            <div class="home-grid-container">
-                <h1 class="heading1">Welcome to Bethesda, MD Temple Inn & Suites</h1>
-                <h3 class="subheading1">Our essence is your well being</h3>
-                <p class="welcome-description">
-                    Our hotel is ready to welcome you and your whole family. Experience the joy and comfort of sleeping near one of the most wonderful temples of the Church of Jesus Christ of Latter-day Saints. <br>
-                    Here you can enjoy a beautiful time with your family.
-                    We have very spacious rooms, with beautiful windows. The comfort of the guests is our main objective. Clean rooms, friendly services, and affordable prices.<br>
-                    We have all you need to feel the love and peace necessary for your ecclesiastical preparation. 
-                    Our essence is your personal well-being and we guarantee that you will enjoy your stay and the many services we offer. Make your reservation now.
-                </p>
-                <img src="assets/images/home-image-1.png" alt="home image 1" class="welcome-image">
-                <div class="temple-selected">
-                    <img src="assets/images/bannerF.png" alt="bethesda temple">
-                    <div class="dialog">
-                        <h1>Bethesda,MD Temple</h1>
-                        <p>
-                            The Bethesda Maryland Temple is one of five temples with a statue of the angel Moroni holding the gold plates that in LDS tradition are the source of the Book of Mormon
-                        </p>
-                    </div>                    
-                </div>
-                <h1 class="weather-heading">Weather</h1>
-                <div class="weather-section">
-                    <div class="weather-graphic">
-                        <img src="assets/images/suncloudy.png" alt="weather" id="weatherIcon" class="weather-icon" >
-                        <h1 id="weatherGrade">33ºC</h1>
-                    </div>
-                    <h2 id="weatherType">Partly Cloudly</h2>
-                    <div class="divisor margin-less"></div>
-                    <div class="weather-info">
-                        <h4>Wind Speed:</h4>
-                        <h4><span id="windSpeed">2.5</span> km/h</h4>
-                        <h4>Wind Chill:</h4>
-                        <h4><span id="windchillInfo">N/A</span></h4>
-                    </div>
-                </div>                
-                <h1 class="agenda-heading">Reservation Agenda</h1>
-                <table class="reservation-info">
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Time</th>
-                            <th># Rooms</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lunes</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Martes</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Miercoles</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="services-image-container">
+                <picture>
+                    <source media="(max-width: 425px)" srcset="assets/images/servicesx425.png" >
+                    <source media="(max-width: 768px)" srcset="assets/images/servicesx768.png" >
+                    <img src="assets/images/servicesx1200.png" alt="Bethesda Temple" >
+                </picture>
             </div>
-        </div>
-        <div class="banner-coupon-container">
-            <h3 class="advice">Use code <u>25DSCTOFF</u> & receive 25% discount in <a href="#">booking</a></h3>
+            <div class="temple-missionary-container">
+                <h1>Full-time temple missionary</h1>
+                <p class="service-description">
+                    All our bedrooms are very different. We use great fabrics, beautiful antique furniture, and the best prints and images we can. 
+                    Many of our bathrooms have beautifully restored Victorian bathtubs. Its size and beauty are only enhanced by its complexity and fun, a true bathing paradise. 
+                    For those who prefer modern thermostats, we have plenty of bathrooms with efficient Teutonic fixtures, we won't take that into account, really!
+                </p>
+                <img src="assets/images/bathroom.jpg" alt="bathroom" class="service-image">
+                <p class="service-heading">
+                    We have a large room for those who have traveled from far away and want to change clothes. They can enjoy heating, even a few snacks.
+                </p>
+                <img src="assets/images/bannerD.jpg" alt="large room" class="service-heading-image-first">
+                <img src="assets/images/large_room.jpg" alt="large room" class="service-heading-image-second">
+                <img src="assets/images/large_room_b.jpg" alt="large room" class="service-heading-image-third">
+            </div>
+            <div class="divisor"></div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h1>Contact Us</h1>
+                    <form action="/wdd230/chamber/thankyou.html" method="GET">
+                        <input type="hidden" name="formType" value="2">
+                        <input type="hidden" name="currentDate" id="currentDate">
+                        <label for="name">Name*</label>
+                        <input type="text" name="name" required>
+                        <label for="email">Email Address*</label>
+                        <input type="text" name="email" required>
+                        <label for="concern">Question/Concern*</label>
+                        <textarea type="text" name="concern" cols="1" rows="5" required></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Phone</h3>
+                    <a href="tel:+1804551244"><u>(+1) 80 455-1244</u></a>
+                    <h3>Email</h3>
+                    <a href="mailto: reception@MDtempleinnandsuites.com"><u>reception@MDtempleinnandsuites.com</u></a>
+                    <h3>Address</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285473!2d-77.0977204844571!3d38.9832559494834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1649319808502!5m2!1ses-419!2spe" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--p>
+                        4800 Montgomery Ln #300<br>
+                        Bethesda, MD 20814 <br>
+                        EE. UU
+                    </p-->
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><img src="assets/images/facebook.png" alt="fb icon" class="fb icon"></a>
+                        <a href="https://instagram.com/"><img src="assets/images/instagram.png" alt="instagram icon" class="instagram icon"></a>
+                        <a href="https://twitter.com/"><img src="assets/images/twitter.png" alt="twitter icon" class="twitter icon"></a>
+                        <a href="https://pinterest.com/"><img src="assets/images/pinterest.png" alt="pinterest icon" class="pinterest icon"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -217,5 +192,6 @@
     </footer>
 
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/form.js"></script>
 </body>
 </html>
